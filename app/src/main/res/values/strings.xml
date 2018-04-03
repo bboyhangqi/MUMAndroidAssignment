@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MUMAndroidAssignment</string>
+    <string name="input_lbs">Input(LBs)</string>
+    <string name="output_kgs">Output(KGs)</string>
+    <string name="convert">CONVERT</string>
+    <string name="add_new_food">add new food...</string>
+    <string name="add_food">ADD FOOD</string>
+    <string name="decide">DECIDE!</string>
 </resources>
