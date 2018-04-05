@@ -3,6 +3,7 @@ package app.mumandroidassignment.lesson3;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -26,8 +27,10 @@ public class Question1ByJava extends Activity {
 
     public void convert(View view) {
         String lbs = edLBs.getText().toString();
-        double pounds = Double.parseDouble(lbs);
-        double kilograms = pounds * 0.454;
-        edKGs.setText(kilograms + "");
+        if(!TextUtils.isEmpty(lbs)){
+            double pounds = Double.parseDouble(lbs);
+            double kilograms = pounds * 0.454;
+            edKGs.setText(kilograms + "");
+        }
     }
 }

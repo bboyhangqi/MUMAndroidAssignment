@@ -9,18 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".lesson3.Question1ByKotlin"></activity>
-        <activity android:name=".lesson3.Question1ByJava">
-        </activity>
-        <activity android:name=".lesson3.Question2ByKotlin">
-        </activity>
-        <activity android:name=".lesson3.Question2ByJava">
+        <activity android:name=".lesson3.Question1ByKotlin" />
+        <activity android:name=".lesson3.Question1ByJava" />
+        <activity android:name=".lesson3.Question2ByKotlin" />
+        <activity android:name=".lesson3.Question2ByJava" />
+        <activity android:name="app.mumandroidassignment.lesson4.bykotlin.ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="app.mumandroidassignment.lesson4.bykotlin.ui.RegisterActivity" />
+        <activity android:name="app.mumandroidassignment.lesson4.bykotlin.ui.ShoppingActivity"></activity>
     </application>
 
 </manifest>
