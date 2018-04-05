@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Toast
 import app.mumandroidassignment.R
 import app.mumandroidassignment.lesson4.bykotlin.presenter.LoginPresenter
+import app.mumandroidassignment.lesson4.bykotlin.view.LoginView
 import kotlinx.android.synthetic.main.activity_walmart_login.*
 
 class LoginActivity : AppCompatActivity(), LoginView {
@@ -18,7 +19,7 @@ class LoginActivity : AppCompatActivity(), LoginView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_walmart_login)
+            setContentView(R.layout.activity_walmart_login)
     }
 
     override fun loginResult(result: Boolean) {

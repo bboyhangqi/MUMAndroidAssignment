@@ -2,7 +2,7 @@ package app.mumandroidassignment.lesson4.bykotlin.presenter
 
 import app.mumandroidassignment.lesson4.bykotlin.bean.User
 import app.mumandroidassignment.lesson4.bykotlin.model.AccountModel
-import app.mumandroidassignment.lesson4.bykotlin.ui.RegisterView
+import app.mumandroidassignment.lesson4.bykotlin.view.RegisterView
 
 /**
  * Created by CodingHome on 4/4/18.

@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Toast
 import app.mumandroidassignment.R
 import app.mumandroidassignment.lesson4.bykotlin.presenter.RegisterPresenter
+import app.mumandroidassignment.lesson4.bykotlin.view.RegisterView
 import kotlinx.android.synthetic.main.activity_create_account.*
 
 class RegisterActivity : AppCompatActivity(), RegisterView {
