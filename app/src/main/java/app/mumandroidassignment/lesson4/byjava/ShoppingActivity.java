@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import app.mumandroidassignment.R;
@@ -14,10 +15,15 @@ import app.mumandroidassignment.R;
 
 public class ShoppingActivity extends Activity {
 
+    private TextView tvAccount ;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping);
+        String username = getIntent().getStringExtra("username");
+        tvAccount = findViewById(R.id.tv_account);
+        tvAccount.setText("welcome " + username);
     }
 
     public void onCategoryClick (View view){

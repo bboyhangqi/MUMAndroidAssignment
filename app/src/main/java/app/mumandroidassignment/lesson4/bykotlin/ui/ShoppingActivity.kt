@@ -1,10 +1,14 @@
 package app.mumandroidassignment.lesson4.bykotlin.ui
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import app.mumandroidassignment.R
+import app.mumandroidassignment.lesson5.bykotlin.question2.ui.activity.BeautyActivity
+import app.mumandroidassignment.lesson5.bykotlin.question2.ui.activity.ClothingActivity
+import app.mumandroidassignment.lesson5.bykotlin.question2.ui.activity.ElectronicActivity
+import app.mumandroidassignment.lesson5.bykotlin.question2.ui.activity.FoodActivity
 import kotlinx.android.synthetic.main.activity_shopping.*
 
 class ShoppingActivity : AppCompatActivity() {
@@ -19,18 +23,10 @@ class ShoppingActivity : AppCompatActivity() {
     fun onCategoryClick(view: View) {
         var id = view.id
         when (id) {
-            R.id.beauty -> Toast.makeText(this,
-                    "You have chosen the Beauty category of shopping",
-                    Toast.LENGTH_SHORT).show()
-            R.id.clothing -> Toast.makeText(this,
-                    "You have chosen the Clothing category of shopping",
-                    Toast.LENGTH_SHORT).show()
-            R.id.electronics -> Toast.makeText(this,
-                    "You have chosen the Electronics category of shopping",
-                    Toast.LENGTH_SHORT).show()
-            R.id.food -> Toast.makeText(this,
-                    "You have chosen the Food category of shopping",
-                    Toast.LENGTH_SHORT).show()
+            R.id.beauty -> startActivity(Intent(this, BeautyActivity::class.java))
+            R.id.clothing -> startActivity(Intent(this, ClothingActivity::class.java))
+            R.id.electronics -> startActivity(Intent(this, ElectronicActivity::class.java))
+            R.id.food -> startActivity(Intent(this, FoodActivity::class.java))
         }
     }
 

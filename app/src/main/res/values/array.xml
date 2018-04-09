@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="moives">
+        <item>Blocks</item>
+        <item>Ready Player One</item>
+        <item>Rampage</item>
+        <item>Infinity War</item>
+        <item>Peter Rabbit</item>
+    </array>
+
+    <array name="beauty">
+        <item>Lipstick</item>
+        <item>Eye Shadow</item>
+        <item>Lipstick</item>
+        <item>Eye Shadow</item>
+        <item>Lipstick</item>
+        <item>Eye Shadow</item>
+        <item>Lipstick</item>
+        <item>Eye Shadow</item>
+        <item>Lipstick</item>
+        <item>Eye Shadow</item>
+    </array>
+
+    <array name="clothing">
+        <item>Shoose</item>
+        <item>Suit</item>
+        <item>Sport Wear</item>
+        <item>Pants</item>
+    </array>
+
+    <array name="food">
+        <item>Noodles</item>
+        <item>Cookies</item>
+        <item>Candies</item>
+        <item>Snacks</item>
+    </array>
+
+</resources>

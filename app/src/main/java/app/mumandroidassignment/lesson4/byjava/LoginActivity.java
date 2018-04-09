@@ -54,8 +54,9 @@ public class LoginActivity extends Activity {
         String username = edUsername.getText().toString();
         String password = edPassword.getText().toString();
         for (int i = 0; i < users.size(); i++) {
-            if(users.get(i).getEmail().equals(username)&&users.get(i).getPassword().equals(password)){
+            if (users.get(i).getEmail().equals(username) && users.get(i).getPassword().equals(password)) {
                 Intent intent = new Intent(this, ShoppingActivity.class);
+                intent.putExtra("username", username);
                 startActivity(intent);
                 finish();
             }
@@ -73,7 +74,7 @@ public class LoginActivity extends Activity {
                 String username = data.getStringExtra("username");
                 String password = data.getStringExtra("password");
 
-                users.add(new User(firstname,lastname,username,password));
+                users.add(new User(firstname, lastname, username, password));
 
                 edUsername.setText(username);
                 edPassword.setText(password);
