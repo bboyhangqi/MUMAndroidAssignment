@@ -29,13 +29,16 @@
         <activity android:name=".lesson5.byjava.question2.DetailActivity" />
         <activity android:name=".lesson5.byjava.question2.ShoppingActivity" />
         <activity android:name=".lesson6.byKotlin.question1.MainActivity"></activity>
-        <activity android:name=".lesson6.byjava.question1.MainActivity">
+        <activity android:name=".lesson6.byjava.question1.MainActivity"></activity>
+        <activity android:name=".lesson6.byjava.question2.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lesson6.byjava.question2.RegisterActivity" />
+        <activity android:name=".lesson6.byjava.question2.ShoppingActivity" />
     </application>
 
 </manifest>
