@@ -46,7 +46,7 @@ public class ElectronicAdpter extends RecyclerView.Adapter<ElectronicAdpter.View
                 .load(data.get(position).getImageUrl())
                 .into(holder.icon);
         holder.title.setText(data.get(position).getTitle());
-        holder.price.setText("Price : $" + data.get(position).getPrice());
+        holder.price.setText("Price : $ " + data.get(position).getPrice());
         holder.color.setText(String.format(Locale.getDefault(), "Color : %s", data.get(position).getColor()));
         holder.itemView.setTag(data.get(position));
     }
