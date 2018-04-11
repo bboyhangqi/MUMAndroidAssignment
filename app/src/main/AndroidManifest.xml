@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="app.mumandroidassignment">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,7 +10,8 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".lesson3.Question1ByKotlin" />
         <activity android:name=".lesson3.Question1ByJava" />
         <activity android:name=".lesson3.Question2ByKotlin" />
@@ -28,17 +30,20 @@
         <activity android:name=".lesson5.bykotlin.question2.ui.activity.DetailActivity" />
         <activity android:name=".lesson5.byjava.question2.DetailActivity" />
         <activity android:name=".lesson5.byjava.question2.ShoppingActivity" />
-        <activity android:name=".lesson6.byKotlin.question1.MainActivity"></activity>
-        <activity android:name=".lesson6.byjava.question1.MainActivity"></activity>
-        <activity android:name=".lesson6.byjava.question2.LoginActivity" >
+        <activity android:name=".lesson6.byKotlin.question1.MainActivity" />
+        <activity android:name=".lesson6.byjava.question1.MainActivity" />
+        <activity android:name=".lesson6.byjava.question2.LoginActivity"></activity>
+        <activity android:name=".lesson6.byjava.question2.RegisterActivity" />
+        <activity android:name=".lesson6.byjava.question2.ShoppingActivity" />
+        <activity android:name=".lesson7.byjava.question1.WebBrowseActivity" />
+        <activity android:name=".lesson7.byjava.question1.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lesson6.byjava.question2.RegisterActivity" />
-        <activity android:name=".lesson6.byjava.question2.ShoppingActivity" />
+        <activity android:name=".lesson7.byjava.question1.WebActivity"></activity>
     </application>
 
 </manifest>
