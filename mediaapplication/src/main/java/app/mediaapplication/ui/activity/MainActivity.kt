@@ -42,7 +42,9 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
     }
 
     private fun checkPermission() {
-        var permissionList = arrayOf(Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        var permissionList = arrayOf(Manifest.permission.RECORD_AUDIO,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.CAMERA)
         var ret = permissionList.filter { ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED }
         if (ret.size > 0) {
             ActivityCompat.requestPermissions(this, permissionList, REQUEST_MICROPHONE)

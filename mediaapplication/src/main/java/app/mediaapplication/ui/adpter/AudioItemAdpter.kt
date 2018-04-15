@@ -2,10 +2,7 @@ package app.mediaapplication.ui.adpter
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
-import android.net.Uri
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +13,7 @@ import java.text.SimpleDateFormat
 
 
 
-class AudioItemApter(var data: List<AudioItem>) : RecyclerView.Adapter<AudioItemApter.ViewHold>() {
+class AudioItemAdpter(var data: List<AudioItem>) : RecyclerView.Adapter<AudioItemAdpter.ViewHold>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHold {
         var view = LayoutInflater.from(parent.context).inflate(R.layout.audio_item, parent, false)

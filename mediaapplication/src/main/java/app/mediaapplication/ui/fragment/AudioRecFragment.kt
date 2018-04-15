@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import app.mediaapplication.R
-import app.mediaapplication.ui.adpter.AudioItemApter
+import app.mediaapplication.ui.adpter.AudioItemAdpter
 import app.mediaapplication.bean.AudioItem
 import app.mediaapplication.presenter.AudioRecPresenter
 import app.mediaapplication.view.AudioRecView
@@ -58,7 +58,7 @@ class AudioRecFragment : Fragment(), AudioRecView, View.OnClickListener {
     }
 
     private fun loadAudioList(audioRecs: List<AudioItem>) {
-        var audioItemApter = AudioItemApter(audioRecs)
+        var audioItemApter = AudioItemAdpter(audioRecs)
         rv.adapter = audioItemApter
     }
 
