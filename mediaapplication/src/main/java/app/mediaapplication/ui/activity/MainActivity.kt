@@ -10,10 +10,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.app.ActionBar
 import android.util.Log
 import app.mediaapplication.R
-import app.mediaapplication.ui.fragment.AudioRecFragment
-import app.mediaapplication.ui.fragment.MusicFragment
-import app.mediaapplication.ui.fragment.VideoFragment
-import app.mediaapplication.ui.fragment.VideoRecFragment
+import app.mediaapplication.ui.fragment.*
 
 class MainActivity : AppCompatActivity(), ActionBar.TabListener {
 
@@ -21,6 +18,7 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
     private val videoFragment by lazy { VideoFragment() }
     private val audioRecFragment by lazy { AudioRecFragment() }
     private val videoRecFragment by lazy { VideoRecFragment() }
+    private val cameraGalleryFragment by lazy { CameraGalleryFragment() }
 
 
     private val REQUEST_MICROPHONE = 1
@@ -39,6 +37,7 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         supportActionBar?.addTab(supportActionBar?.newTab()?.setText("Video")?.setTabListener(this))
         supportActionBar?.addTab(supportActionBar?.newTab()?.setText("Audio Rec")?.setTabListener(this))
         supportActionBar?.addTab(supportActionBar?.newTab()?.setText("Video Rec")?.setTabListener(this))
+        supportActionBar?.addTab(supportActionBar?.newTab()?.setText("Camera&Grally Rec")?.setTabListener(this))
     }
 
     private fun checkPermission() {
@@ -72,6 +71,7 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
             "Video" -> supportFragmentManager.beginTransaction().replace(R.id.root, videoFragment).commit()
             "Audio Rec" -> supportFragmentManager.beginTransaction().replace(R.id.root, audioRecFragment).commit()
             "Video Rec" -> supportFragmentManager.beginTransaction().replace(R.id.root, videoRecFragment).commit()
+            "Camera&Grally Rec" -> supportFragmentManager.beginTransaction().replace(R.id.root, cameraGalleryFragment).commit()
         }
     }
 
